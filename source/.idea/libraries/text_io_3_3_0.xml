@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="text-io-3.3.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../SettlersOfCatan/ext-library/lib/text-io-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../ontius_settlersofcatan/lib/text-io-3.3.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
