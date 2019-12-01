@@ -13,6 +13,7 @@ public class Player {
 
     public Player(Config.Faction faction) {
         this.faction = faction;
+
         structures.put(Config.Structure.SETTLEMENT, new ArrayList<>());
         structures.put(Config.Structure.CITY, new ArrayList<>());
     }

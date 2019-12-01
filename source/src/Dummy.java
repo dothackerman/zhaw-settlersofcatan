@@ -7,12 +7,14 @@ import ch.zhaw.hexboard.Label;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Random;
 
 import org.beryx.textio.TextIO;
 import org.beryx.textio.TextIoFactory;
 import org.beryx.textio.TextTerminal;
 
 public class Dummy {
+    private static Random random = new Random();
 
     public enum Actions {
         SHOW, QUIT, PLAY
@@ -83,9 +85,10 @@ public class Dummy {
                     textTerminal.println(view.toString());
                     break;
                 case PLAY:
-                    //TODO generate random number between 1 and 12
+                    int number = random.nextInt(12) + 1;
                     //TODO if 7 handle special 7-rule
-                    //TODO give resources to players
+
+                    //TODO SiedlerGame.throwDice(number)
 
                     switch (getEnumValue(textIO, SubActions.class)) {
                         case DEAL:
